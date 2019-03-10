@@ -34,3 +34,9 @@ def find_a(array)
   end
   return_array
 end
+
+def sum_array(array)
+  total = 0
+  array.each { |number| total += number }
+  total
+end
