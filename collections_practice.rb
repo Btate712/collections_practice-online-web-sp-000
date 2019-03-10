@@ -42,10 +42,10 @@ def sum_array(array)
 end
 
 def add_s(array)
-  counter = 1
+  counter = 0
   array.collect do |word|
-    word = counter == 2 ? word + "s" : word
     counter += 1
+    word = counter != 2 ? word + "s" : word
   end
 end
     
