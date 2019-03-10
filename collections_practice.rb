@@ -48,4 +48,3 @@ def add_s(array)
     word = counter != 2 ? word + "s" : word
   end
 end
-    
