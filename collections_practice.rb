@@ -24,3 +24,13 @@ end
 def kesha_maker(array)
   array.collect { |string| string = string.slice(0, 2) + "$" + string.slice(3, string.length) }
 end
+
+def find_a(array)
+  return_array = []
+  array.each do |word|
+    if word.start_with("a")
+      return_array << word
+    end
+  end
+  return_array
+end
