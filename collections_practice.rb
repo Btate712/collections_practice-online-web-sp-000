@@ -40,3 +40,12 @@ def sum_array(array)
   array.each { |number| total += number }
   total
 end
+
+def add_s(array)
+  counter = 1
+  array.collect do |word|
+    word = counter == 2 ? word + "s" : word
+    counter += 1
+  end
+end
+    
